@@ -31,8 +31,8 @@ if ENVIRONMENT == 'development':
 else:
     DEBUG = False
 
-ALLOWED_HOSTS = ["https://proplink-production.up.railway.app/", "proplink-production.up.railway.app", "localhost", "proplinx.co", "www.proplinx.co"]
-CORS_ALLOW_ALL_ORIGINS = ["https://proplink-production.up.railway.app/", "http://localhost:8000", "www.proplinx.co"]
+ALLOWED_HOSTS = [ "proplink-production.up.railway.app", "localhost", "proplinx.co", "www.proplinx.co"]
+CORS_ALLOWED_ORIGINS  = ["https://proplink-production.up.railway.app/", "http://localhost:8000", "www.proplinx.co"]
 CORS_ALLOW_METHODS = [
     "GET",
     "POST",
