@@ -1,1 +1,1 @@
-web: gunicorn tatacad.wsgi
+web: gunicorn proplink.wsgi
