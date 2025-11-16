@@ -31,11 +31,21 @@ if ENVIRONMENT == 'development':
 else:
     DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
-CORS_ALLOW_ALL_ORIGINS = True
-
+ALLOWED_HOSTS = ["https://proplink-production.up.railway.app/", "proplink-production.up.railway.app", "localhost", "proplinx.co", "www.proplinx.co"]
+CORS_ALLOW_ALL_ORIGINS = ["https://proplink-production.up.railway.app/", "http://localhost:8000", "www.proplinx.co"]
+CORS_ALLOW_METHODS = [
+    "GET",
+    "POST",
+    "PUT",
+    "PATCH",
+    "DELETE",
+    "OPTIONS"
+]
+# Make sure to include credentials
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_ALL_ORIGINS = True 
 # Application definition
-
+CSRF_TRUSTED_ORIGINS = ["https://proplink-production.up.railway.app", "http://localhost:8000", "https://www.proplinx.co"]
 INSTALLED_APPS = [
     'jazzmin',
     'django.contrib.admin',
